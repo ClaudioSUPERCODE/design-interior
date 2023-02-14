@@ -1,0 +1,317 @@
+@font-face {
+    font-family: "Lora-VariableFont_wght.ttf";
+    src: url("../fonts/Lora-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "WorkSans-VariableFont_wght.ttf";
+    src: url("../fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+/* ---------Farbe: #2e2e2e / #fff / #000 / #1d2c2f ---------- */
+
+/* ----------HEADER---------- */
+
+header {
+    font-family: "Lora-VariableFont_wght.ttf";
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+header .headtext {
+    width: 45%;
+}
+
+header .headtext h1 {
+    font-size: 10rem;
+}
+
+header .headtext h2 {
+    font-size: 2.5rem;
+}
+
+header .headpic {
+    width: 55%;
+}
+
+header .headpic img {
+    width: 100%;
+}
+
+/* --------DYNAMIC NAVIGATION------- */
+
+.dynamicnav {
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    }
+
+.dynamicnav nav a {
+    font-family: "WorkSans-VariableFont_wght.ttf";
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 70px;
+}
+
+/* -----------STORY------------ */
+
+main section h3 {
+    text-align: center;
+    font-weight: lighter;
+    padding: 10px 10px;
+    font-family: "Lora-VariableFont_wght.ttf";
+    font-size: 4.5rem;
+}
+
+main p {
+    text-align: center;
+    font-family: "WorkSans-VariableFont_wght.ttf";
+    font-size: 2rem;
+    padding: 10px 10px;
+}
+
+main .story {
+    background-color: #2e2e2e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main .story .storypic {
+    width: 60%;
+}
+
+main .story .storypic img {
+    width: 100%;
+}
+
+main .story .storytext {
+    width: 40%;
+    margin: 0 30px;
+}
+
+/* -------FEATURED--------- */
+
+
+main .feat .feattext {
+    margin: 20vh 0;
+    width: 100%;
+    text-align: center;
+}
+
+main .feat .featpics {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    
+}
+
+main .feat .featpics img {
+    width: 400px;
+}
+
+main .feat .featpics figcaption {
+    color: #565555;
+    font-family: "WorkSans-VariableFont_wght.ttf";
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main .feat .featvid {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+/* -------GET IN TOUCH-------- */
+
+main .touch {
+    background-color: #2e2e2e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+main .touch .touchtext {
+    width: 50%;
+}
+
+main .touch .touchtext p {
+    margin: 0 100px;
+}
+
+main .touch .touchform {
+    font-family: "WorkSans-VariableFont_wght.ttf";
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+main .touchform h4 {
+    font-family: "Lora-VariableFont_wght.ttf";
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+main .touchform .name {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+main .touchform .email {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+main .touchform .message {
+    font-family: "WorkSans-VariableFont_wght.ttf";
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+main .touchform .button {
+    padding: 5px 20px;
+    font-family: "WorkSans-VariableFont_wght.ttf";
+    font-weight: bolder;
+}
+
+/* ----------FOOTER-------- */
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #1d2c2f;
+    color: #fff;
+    font-family: "Lora-VariableFont_wght.ttf";
+    font-size: 2.5rem;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer h5 {
+    font-weight: lighter;
+    margin: 30px;
+}
+
+footer nav {
+    display: flex;
+}
+
+footer nav a {
+    font-weight: lighter;
+    margin: 30px;
+    color: #fff;
+    font-family: "Lora-VariableFont_wght.ttf";
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 30px 0;
+    padding-right: 30px;
+}
+
+/* ----------responsive---------- */
+
+@media only screen and (max-width: 600px) {
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header .headtext {
+    width: 100%;
+}
+
+header .headpic {
+    width: 100%;
+}
+
+.dynamicnav {
+    display: none;
+}
+
+main section.story {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+main section.story .storytext{
+    width: 100%;
+
+}
+
+main section.story .storytext h3 {
+    width: 100%;
+}
+
+main section.story div.storypic {
+    width: 100%;
+}
+
+main .feat .feattext {
+    margin: 5px;
+}
+
+main .feat .featpics img {
+    width: 100%;
+}
+
+main .touch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .touch .touchtext {
+    width: 100%;
+}
+
+main .touch .touchtext p {
+    padding-bottom: 40px;
+}
+
+main .touch .touchform {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav a {
+    padding: 0;
+}
+
+}
